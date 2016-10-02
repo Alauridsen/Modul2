@@ -9,19 +9,28 @@ html, body {
 	padding: 20px;
 }
 
+.hidden {
+	display: none;	
+	
+}
+
+.login {
+	float: right;
+}
+
 li {
 	display: inline;
 	margin-left: 50px;
 }
 
-li a {
+li a, li p{
 	text-decoration: none;
 	font-size: 20px;
 	color: #F7F7F7;
 	font-family: arial;
 }
 
-p, h1, h2, h3 {
+h1, h2, h3 {
 	margin-left: 20px;	
 }
 
@@ -29,14 +38,17 @@ p, h1, h2, h3 {
 	font-weight: bold;
 	text-shadow: 2px 2px #000000;
 }
-
-@media screen and (max-width: 405px) {
+@media screen and (max-width: 640px) {
 
 li {
 	margin-left: 0px;
 	margin-top: 10px;
 	text-align: center;
 	display: block;	
+}
+
+.login {
+	float: none;	
 }
 
 }

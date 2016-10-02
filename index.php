@@ -1,3 +1,6 @@
+<?PHP session_start();
+?>
+
 <!doctype html>
 <html>
 <head>
@@ -8,8 +11,9 @@
 
 <body>
 <?PHP include 'menu.php'; ?>
-<h1>Side 1</h1>
-<p>text</p>
+
+<h1>Welcome!</h1>
+<?PHP if(empty($_SESSION['uid'])) { echo '<p>You are not logged in. <a href="login.php">Login</a> or <a href="register.php">register</a></p>';} ?>
+<?PHP if(!empty($_SESSION['uid'])) { echo '<p>you are logged in!</p>';} ?>
 </body>
 </html>
-
